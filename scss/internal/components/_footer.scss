@@ -1,0 +1,52 @@
+.footer-bottom {
+  background-color: #f6f6f6;
+  padding: 50px 0;
+  &_img{
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 500px) {
+      img{
+        width: 100px;
+      }
+    }
+  }
+  &_info {
+    display: flex;
+    justify-content: space-between;
+  }
+  &_social {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 50px 50px;
+    border-radius: 50px;
+    @media screen and (max-width: 500px) {
+      padding: 30px 30px;
+    }
+    @media screen and (max-width: 400px) {
+      padding: 10px 15px;
+    }
+  }
+  &_text {
+    h6 {
+      @include poppins-regular();
+      color: #606060;
+      padding-right: 10px;
+      margin: 0;
+      font-size: 14px;
+    }
+  }
+  &_icons {
+    background-color: white;
+    box-shadow: 0 5px 20px 2px #f2f2f2;
+    padding: 8px 16px;
+    display: flex;
+    border-radius: 25px;
+    img:nth-child(1) {
+      margin-right: 8px;
+    }
+    img:nth-child(2) {
+      margin-right: 8px;
+    }
+  }
+}

@@ -1,0 +1,132 @@
+.csr-section {
+  padding: 100px 0 100px 0;
+  background: url(./../../../../images/SVG/csr-banner.png) center center
+    no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  .csr-info {
+    display: flex;
+    justify-content: space-between;
+    &_text {
+      h2 {
+        @include poppins-semibold();
+        font-size: 16px;
+        color: #2c35f8;
+        padding-bottom: 35px;
+      }
+      h3 {
+        @include poppins-bold();
+        font-size: 20px;
+        padding-bottom: 20px;
+        color: white;
+      }
+      p {
+        @include poppins-regular();
+        font-size: 14px;
+        color: #99989f;
+        @media screen and (max-width: 991px) {
+          padding-right: 220px;
+        }
+        @media screen and (max-width: 767px) {
+          padding-right: 100px;
+        }
+        @media screen and (max-width: 480px) {
+          padding-right: 0px;
+        }
+      }
+    }
+    &_logo {
+      height: 62px;
+      margin-top: -55px;
+      @media screen and (min-width: 991px) {
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+.social-section {
+  width: 380px;
+  height: 390px;
+  border-radius: 5px;
+  background-color: #fef5ff;
+  position: absolute;
+  right: 0;
+  margin-top: 177px;
+  box-shadow: 0 0px 6px 1px #fef5ff;
+  @media screen and (max-width: 991px) {
+    display: none;
+  }
+}
+.social-section-fb {
+  width: 380px;
+  height: 390px;
+  border-radius: 5px;
+  background-color: #f7fbff;
+  position: absolute;
+  right: 0;
+  margin-top: 50px;
+  box-shadow: 0 0px 6px 1px #f7fbff;
+  @media screen and (max-width: 991px) {
+    display: none;
+  }
+}
+.social-instagram_head {
+  position: absolute;
+  width: 165px;
+  height: 60px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  top: -30px;
+  left: 110px;
+  img {
+    margin-right: 8px;
+  }
+  p {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    @include poppins-regular();
+    font-size: 16px;
+    color: black;
+  }
+}
+
+.grid-image1 {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.grid-image2 {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-image_img1 {
+  margin-top: 50px;
+}
+.grid-image_img2 {
+  margin-top: 20px;
+}
+
+.follow-soc {
+  span {
+    color: #2c35f8;
+  }
+  p {
+    @include poppins-semibold();
+    font-size: 16px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.facebook {
+  z-index: -1;
+}

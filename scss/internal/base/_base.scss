@@ -1,0 +1,28 @@
+body {
+  @include poppins-regular();
+
+}
+
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  line-height: 1.4;
+  @include poppins-regular();
+  font-size: 1rem;
+
+  @media (max-width: 768px) {
+    font-size: 0.875rem;
+  }
+}
+
+main{
+  min-height: 100vh;
+}

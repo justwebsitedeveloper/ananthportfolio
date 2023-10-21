@@ -1,0 +1,28 @@
+// Importing the external libraries
+@import "./external/libraries";
+
+// Base
+@import "./internal/base/fonts";
+@import "./internal/base/varibles";
+@import "./internal/base/mixins";
+@import "./internal/base/base";
+
+// Home
+@import "./internal/pages/home/banner";
+@import "./internal/pages/home/recent";
+@import "./internal/pages/home/csr";
+@import "./internal/pages/home/meet";
+@import "./internal/pages/home/casestudy";
+@import "./internal/pages/home/experience";
+@import "./internal/pages/home/modernslider";
+
+// About
+@import "./internal/pages/about/about";
+
+// Contact
+@import "./internal/pages/contact/contact";
+
+// Components
+@import "./internal/components/navigation";
+@import "./internal/components/footer";
+

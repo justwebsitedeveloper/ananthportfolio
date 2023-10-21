@@ -1,0 +1,59 @@
+.experience {
+  padding-top: 150px;
+  &_info {
+    h2 {
+      @include poppins-semibold();
+      font-size: 16px;
+      color: #2c35f8;
+      padding-bottom: 35px;
+    }
+    h3 {
+      @include poppins-bold();
+      font-size: 20px;
+      padding-bottom: 20px;
+    }
+    p {
+      @include poppins-regular();
+      font-size: 14px;
+      color: #99989f;
+    }
+    @media screen and (max-width: 991px) {
+      width: 100%;
+    }
+  }
+  &-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    @media screen and (max-width: 991px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  // &-testimonials {
+  //   &__carousel {
+  //     width: 1024px;
+  //   }
+  // }
+  .slider-section {
+    // max-width: 990px;
+    // margin-left: 70px;
+    .drag-carousel > div p{
+      padding-top: 20px;
+      padding-left: 8px;
+      @include poppins-medium();
+      font-size: 14px;
+      color: #606060;
+      margin:0;
+    }
+    .owl-carousel .owl-item img {
+      width: 175px;
+      height: 255px;
+    }
+    @media screen and (max-width: 991px) {
+      padding-top: 25px;
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+}

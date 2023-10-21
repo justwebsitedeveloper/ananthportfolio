@@ -1,0 +1,41 @@
+.meet-section {
+  padding: 120px 0 120px 0;
+  .meet-details {
+    display: flex;
+    justify-content: space-between;
+    .meet-info {
+        align-self: center;
+      h2 {
+        @include poppins-semibold();
+        font-size: 16px;
+        color: #2c35f8;
+        padding-bottom: 35px;
+      }
+      h3 {
+        @include poppins-bold();
+        font-size: 20px;
+        padding-bottom: 25px;
+      }
+      a {
+        text-decoration: none;
+        p {
+          @include poppins-medium();
+          font-size: 14px;
+          color: #2c35f8;
+          img{
+            padding-left: 16px;
+          }
+        }
+      }
+    }
+    .meet-img img{
+      @media screen and (max-width:500px) {
+        width: 200px;
+        padding-left: 15px;
+      }
+      @media screen and (max-width:400px) {
+        width: 180px;
+      }
+    }
+  }
+}

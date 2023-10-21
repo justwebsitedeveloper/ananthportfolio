@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Ananth Karthick</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <header>
+    <section>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="nav-link active" href="/">Home</a>
+        <a class="nav-link" href="/about.html">Updates</a>
+        <a class="nav-link" href="/contact.html">Contact</a>
+      </div>
+    </section>
+
+    <section class="nav-header">
+      <nav class="navbar fixed-top">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a class="navbar-brand" href="/"><img class="nav-logo" src="./images/SVG/logo.svg" alt="Ananth Logo"
+                width="89px" height="58px" /></a>
+            <div class="nav-links">
+              <ul class="nav-list">
+                <li>
+                  <a class="nav-link" href="/">Home</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="/about.html">Updates</a>
+                </li>
+                <li>
+                  <a class="nav-link active" href="/contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav-social">
+              <div class="nav-social_text">
+                <h6>Follow me on</h6>
+              </div>
+              <div class="nav-social_icons">
+                <a href=""><img src="./images/SVG/instagram.svg" alt="instagram" width="14px" height="14px" /></a>
+                <a href=""><img src="./images/SVG/facebook.svg" alt="facebook" width="14px" height="14px" /></a>
+                <a href=""><img src="./images/SVG/linkedin.svg" alt="linkedin" width="14px" height="14px" /></a>
+              </div>
+            </div>
+            <div id="ham" class="hamburger">
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-details">
+          <div class="contact-form col-xl-5 col-lg-6 col-md-12">
+            <h2>Lets talk business</h2>
+
+            <form id="contact" method="post">
+              <div class="dbl-field">
+                <div class="field form-row">
+                  <fieldset class="col cont-input">
+                    <input type="text" class="form-control username" id="firstName" name="firstName" placeholder="Name"
+                      required />
+                  </fieldset>
+                  <fieldset class="col cont-input">
+                    <input type="email" class="form-control email" name="email" id="email" placeholder="Email ID"
+                      required /> 
+                  </fieldset>
+                  <fieldset class="col cont-input">
+                    <input type="number" class="form-control number" maxlength="10" step="0.01" name="phone" id="phone"
+                      placeholder="Phone Number" required />
+                  </fieldset>
+                  <fieldset class="form-group msg-box">
+                    <textarea class="form-control message" id="message" name="message" placeholder="Message" rows="7"
+                      required></textarea>
+                  </fieldset>
+                  <fieldset class="submit-btn button-area">
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" class="submit">
+                      Submit
+                    </button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="contact-form-address col-lg-6">
+            <h3>RV Matrix Software Technologies Pvt Ltd</h3>
+            <p>S1 & S2, 2nd Floor, B Block, Ameen Manors,<br>
+              Nungambakkam High Rd,<br>
+              Nungambakkam, Chennai,<br>
+              Tamil Nadu 600034</p>
+            <a href="">Get Direction</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom_info">
+          <div class="footer-bottom_img">
+            <img src="./images/SVG/logo.svg" alt="" width="123px" height="80px" />
+          </div>
+          <div class="footer-bottom_social">
+            <div class="footer-bottom_text">
+              <h6>Follow me on</h6>
+            </div>
+            <div class="footer-bottom_icons">
+              <img src="./images/SVG/instagram.svg" alt="instagram" width="14px" height="14px" />
+              <img src="./images/SVG/facebook.svg" alt="facebook" width="14px" height="14px" />
+              <img src="./images/SVG/linkedin.svg" alt="linkedin" width="14px" height="14px" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/contact.js"></script>
+  <script>
+    // User ID user_psmJyCBE8dO24j7rVi9VX
+    // Access Token ff5b4c2ec871823f6d9c7471814189bb
+  </script>
+</body>
+
+</html>

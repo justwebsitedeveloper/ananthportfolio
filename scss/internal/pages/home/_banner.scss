@@ -1,0 +1,109 @@
+.home-banner {
+  background-color: white;
+  &-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  &_text {
+    background-color: white;
+    align-self: center;
+    padding-top: 20px;
+    h2 {
+      @include poppins-light();
+      font-size: 28px;
+      @media screen and (max-width: 470px) {
+        font-size: 24px;
+      }
+      @media screen and (max-width: 400px) {
+        font-size: 20px;
+      }
+    }
+    h3 {
+      @include poppins-bold();
+      font-size: 34px;
+      @media screen and (max-width: 470px) {
+        font-size: 26px;
+      }
+      @media screen and (max-width: 400px) {
+        font-size: 26px;
+      }
+      span {
+        color: #2c35f8;
+      }
+    }
+  }
+  .more-link {
+    padding-top: 50px;
+    a {
+      text-decoration: none;
+      p {
+        display: flex;
+        justify-content: flex-end;
+        @include poppins-semibold();
+        font-size: 14px;
+        color: #2c35f8;
+        img {
+          padding-left: 16px;
+        }
+      }
+    }
+  }
+  &_img {
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+}
+
+.vertical-name {
+  transform: rotate(270deg);
+  transform-origin: left top 0;
+  margin-top: 160px;
+  display: inline-block;
+  h2 {
+    @include poppins-semibold();
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+  }
+
+  &::before {
+    //   display: inline-block;
+    //   content: "";
+    //   border-top: .1rem solid #2c35f8;
+    //   width: 80px;
+    //   margin: 0 1rem;
+    //   transform: translateY(-1rem);
+    position: absolute;
+    content: url("./../../../images/SVG/line-ban.png");
+    left: -90px;
+    bottom: -40px;
+    transform: rotate(270deg);
+    transform-origin: left top 0;
+  }
+  h3 {
+    @include poppins-medium();
+    font-size: 14px;
+    color: #2c35f8;
+  }
+}
+.banner-text {
+  margin-top: 70px;
+}
+
+// Animation arrow
+@-webkit-keyframes uparrow {
+  0% {
+    -webkit-transform: translateX(0);
+    opacity: 0.4;
+  }
+  100% {
+    -webkit-transform: translateX(-0.4em);
+    opacity: 0.9;
+  }
+}
+
+.right {
+  -webkit-animation: uparrow 0.6s infinite alternate ease-in-out;
+}

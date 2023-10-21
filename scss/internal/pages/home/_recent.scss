@@ -1,0 +1,236 @@
+.recent-section {
+  padding-top: 150px;
+}
+
+.recent {
+  padding-top: 150px;
+}
+
+.carousel-prev,
+.carousel-next {
+  color: #888;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 50%;
+  background-color: #e8e8e8;
+  margin-top: 30px;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+}
+
+.ananth-video {
+  position: relative;
+}
+
+.play-icon {
+  position: absolute;
+  top: 39%; 
+  left: 45%;
+}
+
+.recent-division {
+  background-color: #fafafa;
+  &_left-content {
+    max-width: 400px;
+    align-self: center;
+    h2 {
+      @include poppins-semibold();
+      font-size: 16px;
+      color: #2c35f8;
+    }
+    h3 {
+      @include poppins-bold();
+      font-size: 20px;
+      padding-bottom: 20px;
+      padding-top: 30px;
+    }
+    p {
+      @include poppins-regular();
+      font-size: 14px;
+      padding-right: 60px;
+      margin: 0;
+      // height: 80px;
+    }
+  }
+  &_info {
+    left: 50%;
+    transform: translate(-50%, 35%);
+    position: relative;
+  }
+  .ananth-vid {
+    img {
+      width: 100%;
+    }
+  }
+  &_right-content {
+    background-color: #171717;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    height: 381px;
+    h2 {
+      color: white;
+      @include poppins-semibold();
+      font-size: 16px;
+      padding-top: 50px;
+      padding-left: 30px;
+      padding-bottom: 30px;
+    }
+    .vlog-info {
+      display: flex;
+      padding-left: 30px;
+      margin-bottom: 20px;
+      &_episode {
+        h3 {
+          @include poppins-medium();
+          font-size: 14px;
+          color: #757577;
+          margin: 0;
+          padding-bottom: 8px;
+        }
+        h4 {
+          @include poppins-medium();
+          font-size: 14px;
+          color: #d7d7d8;
+          margin: 0;
+        }
+        &-btn {
+          display: flex;
+          align-self: center;
+          a {
+            text-decoration: none;
+            padding-right: 30px;
+            display: flex;
+            margin-left: 170px;
+            img {
+              padding-right: 8px;
+            }
+            p {
+              align-self: center;
+              @include poppins-regular();
+              font-size: 12px;
+              color: #6377d2;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.vlog{
+  position: sticky;
+  top: 0; 
+  margin: 0;
+  background-color: #171717;
+}
+
+.slideshow-container {
+  position: relative;
+  .mySlides {
+    display: none;
+    padding: 15px 40px 0 0;
+  }
+  .prev,
+  .next {
+    cursor: pointer;
+    width: auto;
+    padding: 5px 10px;
+    color: #888;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 50%;
+    user-select: none;
+    background-color: #e8e8e8;
+    margin-top: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .prev:hover,
+  .next:hover {
+    color: #2c35f8;
+  }
+}
+
+.recent-div {
+  position: relative;
+  background-color: #fafafa;
+  z-index: 1;
+  .vlog {
+    z-index: 8;
+  }
+  .recent-slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+  }
+  .ak-vlog {
+    color: rgb(199, 182, 182);
+    padding: 0;
+    z-index: 10;
+  }
+}
+.vid-img {
+  height: 100%;
+  width: 100%;
+}
+
+.play-btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.trailer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.95);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+}
+.trailer.active {
+  visibility: visible;
+  opacity: 1;
+}
+.trailer video {
+  position: relative;
+  max-width: 900px;
+  outline: none;
+}
+.close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  filter: invert(1);
+  max-width: 32px;
+}
+
+
+@media screen and (min-width:1600px) {
+  .vid-img{
+    width: auto;
+  }
+}
